@@ -15,6 +15,8 @@
 
 \RequirePackage[utf8]{inputenc}		% bei der Verw. von lualatex oder xelatex entfernen!
 
+\usepackage[printonlyused]{acronym}
+\usepackage{float} 
 \graphicspath{{images/}}    % Verzeichnis mit Bildern und Grafiken
 \logofile{logo}				% Logo-Datei = images/logo.pdf (\logofile{}, wenn kein Logo gewünscht)
 \bibliography{references}  	% Biblatex-Literaturdatei (references.bib)
@@ -25,10 +27,10 @@
 
 %%% Einträge für ALLE Arbeiten: -----------------------------
 \title{Industrielle Cloud Applikationen in Industrie 4.0 mit Siemens MindSphere}
-\author{Elisabeth \ Egger}
-\programname{??? }
+\author{Dipl.-Ing. Elisabeth \ Egger}
+\programname{Software Engineering }
 \placeofstudy{Hagenberg}
-\dateofsubmission{2018}{02}{28}	% {YYYY}{MM}{DD}
+\dateofsubmission{2018}{01}{25}	% {YYYY}{MM}{DD}
 
 %%% Zusätzlich für eine Bachelorarbeit: ---------------------
 \thesisnumber{S1510307005-A}   % Stud-ID, z.B. 1310238045-A  
@@ -52,20 +54,18 @@
 \tableofcontents
 
 %\include{thesis_DE/front/vorwort} % Optional. Ggf. weglassen
-\include{bachelorthesis_ElisabethEgger/front/kurzfassung}		
-\include{bachelorthesis_ElisabethEgger/front/abstract}			
+\include{front/kurzfassung}		
+\include{front/abstract}			
 
 %%%----------------------------------------------------------
 \mainmatter          % Hauptteil (ab hier arab. Seitenzahlen)
 %%%----------------------------------------------------------
 
-\include{bachelorthesis_ElisabethEgger/chapters/einleitung}
-\include{bachelorthesis_ElisabethEgger/chapters/industrie40}
-\include{bachelorthesis_ElisabethEgger/chapters/iot}
-\include{bachelorthesis_ElisabethEgger/chapters/mindsphere}
-\include{bachelorthesis_ElisabethEgger/chapters/aufgabenstellung}
-\include{bachelorthesis_ElisabethEgger/chapters/implementierung}
-\include{bachelorthesis_ElisabethEgger/chapters/zusammenfassung}
+\include{chapters/einleitung}
+\include{chapters/grundlagen}
+\include{chapters/realisierung}
+\include{chapters/ergebnisse}
+\include{chapters/zusammenfassung}
 
 
 
@@ -73,8 +73,8 @@
 \appendix                                            % Anhang 
 %%%----------------------------------------------------------
 
-%\include{thesis_DE/back/anhang_a}	% Technische Ergänzungen
-%\include{thesis_DE/back/anhang_b}	% Inhalt der CD-ROM/DVD
+\include{back/anhang_a}	% Abkürzungsverzeichnis
+\include{back/anhang_b}	% Inhalt der CD-ROM/DVD
 %\include{thesis_DE/back/anhang_c}	% Chronologische Liste der Änderungen
 %\include{thesis_DE/back/anhang_d}	% Quelltext dieses Dokuments
 
